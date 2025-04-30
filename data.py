@@ -5,7 +5,7 @@ import plotly.express as px
 #fungsi untuk memuat data
 def load_data():
     # Baca file CSV dari folder 'dataset'
-    df = pd.read_csv('dataset/covid_19_indonesia_time_series_all.csv')
+    df = pd.read_csv('covid_19_indonesia_time_series_all.csv')
     # Buang semua baris di mana kolom "Location" bernilai "Indonesia"
     df = df[df["Location"] != "Indonesia"]
     # Kembalikan DataFrame yang sudah dibersihkan
